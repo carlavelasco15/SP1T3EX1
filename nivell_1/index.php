@@ -23,6 +23,7 @@
     echo "<p>Una variable tipus " . gettype($str) . " $str.</p>";
     echo "<p>Una variable tipus " . gettype($bool) . " $bool.</p>";
     echo "<br>";
+    echo "<br>";
 
 
     /* EXERCICI 2 */
@@ -36,6 +37,7 @@
     echo "<p>Longitud: " . strlen($hola) . "</p>";
     echo "<p>Revert: " . strrev($hola) . "</p>";
     echo "<p>Concatenar: $hola $curs</p>";
+    echo "<br>";   
     echo "<br>";
 
 
@@ -45,6 +47,7 @@
 
      define("NOM", "Carla");
      echo "<h1><b>" . NOM . " </b></h1>";
+     echo "<br>";
      echo "<br>";
 
 
@@ -102,14 +105,48 @@
     echo "<p>Suma de totes les variables: $x + $y + $n + $m = $sum_tot</p>";
     echo "<p>Multiplicació de totes les variables: $x x $y x $n x $m = $mult_tot</p>";
 
+    echo "<br>";
+    echo "<br>";
 
 
+    /* EXERCICI 5 */
 
+    echo "<h5>EXERCICI 5</h5>";
 
+    $arr1 = array(1, 2, 3, 4, 5);
+    $arr2 = array(1, 2, 3);
+    echo "<p><b>Afegim un valor a l'array</b></p>";
+    echo "<p>";
+    print_r($arr2);
+    echo "</p>";
+    array_push($arr2, 4);
+    echo "<p>";
+    print_r($arr2);
+    echo "</p>";
+
+    echo "<br>";
+
+    echo "<p><b>Ajuntem les dues matrius</b></p>";
+    $arr_merge = array_merge($arr1, $arr2);
+    echo "<p>";
+    print_r($arr_merge);
+    echo "</p>";
+    echo "<p>Longitud de la matriu: ". count($arr_merge). "</p>";
+    echo "<br>";
+
+    echo "<p><b>Imprimim valor a valor</b></p>";
+    foreach ($arr_merge as $item) {
+        static $i = 0;
+        echo "<p>Valor $i: $item</p>";
+        $i++;
+    }
 
 
 
     echo "<br>";
+
+   
+
     ?>
 </body>
 </html>
