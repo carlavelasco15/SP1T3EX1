@@ -36,6 +36,15 @@
     echo "<p>Longitud: " . strlen($hola) . "</p>";
     echo "<p>Revert: " . strrev($hola) . "</p>";
     echo "<p>Concatenar: $hola $curs</p>";
+    echo "<br>";
+
+     /* EXERCICI 3 */
+
+     echo "<h5>EXERCICI 3</h5>";
+
+     define("NOM", "Carla");
+     echo "<h1><b>" . NOM . " </b></h1>";
+     echo "<br>";
     ?>
 </body>
 </html>
